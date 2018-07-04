@@ -1,87 +1,209 @@
 <!DOCTYPE html>
-<html lang="zh_cmn">
-<head>
-<meta charset=utf-8 />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-<title></title>
-<style>
-.head{position:fixed;left:0;height:38px;line-height:38px;width:100%;background-color:#99CC00;}
-.head{top:0;}
-.main{position:fixed;top:38px;bottom:38px;width:100%;overflow:scroll;background-color:#BABABA;}
-</style>
-</head>
-<body>
-<header class="head">顶部固定区域</header>
-<article class="main"  id="wrapper">  
-    <div>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-    <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-     <p>当内容欲出隐藏时，灰色区域可上下拖动</p>
-    <input type="text" value="" class="inputtext"> <br>
-        <input type="text" value="" class="inputtext"> <br>
-   <input type="text" value="" class="inputtext"> <br>
-   <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-   <input type="text" value="" class="inputtext"> <br>
-   <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-   <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-   <input type="text" value="" class="inputtext"> <br>
-  <input type="text" value="" class="inputtext"> <br>
-  <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-   <input type="text" value="" class="inputtext"> <br>
-   <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-     <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-    <input type="text" value="" class="inputtext"> <br>
-     content <br>
-    content <br>
-    content <br>
-    content <br>
-    content <br>
-    content <br>
-    content <br>
-    content <br>
-    content <br>
-  </div>
-</article>
-</body>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta charset="utf-8"/>
+    <!--优先使用IE最新版本和Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动设备上屏幕显示区域的设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <!--主要是针对苹果手机将数字自动识别为号码-->
+    <meta name="format-detection" content="telephone=no">
+    <!--启用全屏模式，伪装app，离线应用。-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--隐藏状态栏/设置状态栏颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器-->
+    <meta name="HandheldFriendly" content="True">
+    <!-- 微软的老式浏览器 告诉浏览器页面为某个宽度特殊优化-->
+    <meta name="MobileOptimized" content="width">
+    <!--指定适合自己网站的渲染内核名称-->
+    <meta name="renderer" content="webkit" />
+    <style>
+    .head-logo{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #fff;
+      display: flex;
+      z-index: 2;
+      justify-content: space-between;
+      align-items: center;
+      height: 1.28rem;
+      border:1px solid #EEEEEE;
+      padding: 0 .426667rem;  
+    }
+    img{
+        width: 2.48rem;
+    }
+    .nbsp{
+        font-size: 14px;
+        color: transparent;
+    }
+    .btn{
+        display: none;
+        font-size: 14px;
+    }
+    body{
+        padding-top: 1.28rem;
+    }
+    .search{
+        height: 1.28rem;
+        box-sizing: border-box;
+        padding-top: .106667rem;
+    }
+    .search-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 9.146667rem;
+        height: .853333rem;
+        margin: 0 auto;
+        background: #F5F5F5;
+        border-radius: .4rem;
+    }
+    .wap-icon{
+        font-size: 12px;
+        color: #CCCCCC;
+        margin-right: 4px;
+    }
+    span{
+        line-height: .853333rem;
+        color: #CCCCCC;
+    }
+    .shuffling{
+        position: relative;
+        height: 4.413333rem;
+        width: 9.146667rem;
+        margin: 0 auto;
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT578ir4a_T1YUzU0zhSbV4tkwbW25vULtZ8MG7t6_nJXsJYfhk') no-repeat center;
+        background-size: cover;
+        border-radius: 4px;
+    }
+    .tips{
+        position: absolute;
+        width: 100%;
+        height: 1.173333rem;
+        padding-left: .426667rem;
+        line-height: 1.173333rem;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+        font-weight: bold;
+        color: #fff;
+        background: rgba(0,0,0,0.6);
+        border-radius: 4px;
+    }
+    .site-map{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: .56rem;
+    }
+    li{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 33%;
+        margin-bottom: .586667rem;
+        text-align: center;
+    }
+    .wap-icon{
+        font-size: 24px;
+        color: transparent;
+    }
+    .d1{
+        background: linear-gradient(#FF5500, #FF7300);
+        background-clip: text;
+    }
+    .d2{
+        background: linear-gradient(#FF9100, #FF7300);
+        background-clip: text;
+    }
+    .d3{
+        background: linear-gradient(#FFAF00, #FF9100);
+        background-clip: text;
+    }
+    .d4{
+        background: linear-gradient(#FF9100, #FF7300);
+        background-clip: text;
+    }
+    .d5{
+        background: linear-gradient(#FFAF00, #FF9100);
+        background-clip: text;
+    }
+    .d6{
+        background: linear-gradient(#FFAF00, #FFCD00);
+        background-clip: text;
+    }   
+    span{
+        color: #666666;
+    }
+
+    </style>
+    <script src="flexible_css.debug.js"></script>
+    <script src="flexible.debug.js"></script>
+  </head>
+  <body class='home-template'>
+    <div class="head-logo">
+        <div></div>
+        <img src="../../assets//imgs//17_logo.png" alt="17做网店">
+        <div class="nbsp wap-icon">&#xe62e;</div>
+        <a href="/news/search" class="wap-icon btn">&#xe62e;</a>
+    </div>
+    <div class="search">
+        <a href="/news/search" class="search-content">
+            <div class="wap-icon">&#xe62d;</div>
+            <span>输入问题关键字搜索</span>
+        </a>
+    </div>
+
+
+    <ul class="site-map">
+      <li>
+          <a href={%$current.href%}>
+              <div class="wap-icon d1">踩踩踩踩踩踩踩踩踩踩踩</div>
+              <span>哈哈哈哈哈哈哈哈哈哈哈</span>
+          </a>
+      </li>
+      <li>
+          <a href={%$current.href%}>
+              <div class="wap-icon d1">踩踩踩踩踩踩踩踩踩踩踩</div>
+              <span>哈哈哈哈哈哈哈哈哈哈哈</span>
+          </a>
+      </li>
+      <li>
+          <a href={%$current.href%}>
+              <div class="wap-icon d1">踩踩踩踩踩踩踩踩踩踩踩</div>
+              <span>哈哈哈哈哈哈哈哈哈哈哈</span>
+          </a>
+      </li>
+      <li>
+          <a href={%$current.href%}>
+              <div class="wap-icon d1">踩踩踩踩踩踩踩踩踩踩踩</div>
+              <span>哈哈哈哈哈哈哈哈哈哈哈</span>
+          </a>
+      </li>
+      <li>
+          <a href={%$current.href%}>
+              <div class="wap-icon d1">踩踩踩踩踩踩踩踩踩踩踩</div>
+              <span>哈哈哈哈哈哈哈哈哈哈哈</span>
+          </a>
+      </li>
+
+      <li>
+          <a href={%$current.href%}>
+              <div class="wap-icon d1">踩踩踩踩踩踩踩踩踩踩踩</div>
+              <span>哈哈哈哈哈哈哈哈哈哈哈</span>
+          </a>
+      </li>
+    </ul>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  </body>
+  <script>
+  
+  </script>
+
 </html>
